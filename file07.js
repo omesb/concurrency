@@ -5,9 +5,11 @@ const randomDelayPromise = (value) => new Promise((resolve, reject) => {
 })
 
 async function asi() {
-    console.log(randomDelayPromise(1));
-    console.log(randomDelayPromise(2));
-    console.log(randomDelayPromise(3));
+    console.time("asi")
+    console.log(await randomDelayPromise(1));
+    console.log(await randomDelayPromise(2));
+    console.log(await randomDelayPromise(3));
+    console.timeEnd("asi")
 }
 
 asi();

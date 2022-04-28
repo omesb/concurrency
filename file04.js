@@ -5,6 +5,6 @@ async function asi() {
   return result;
 }
 
-console.log(asi());
+asi().then(console.log)
 
 // https://www.strawpoll.me/46034800

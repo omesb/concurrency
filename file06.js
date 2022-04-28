@@ -4,8 +4,8 @@ const randomDelayPromise = (value) => new Promise((resolve, reject) => {
     }, (Math.random()) * 3000);
 })
 
-randomDelayPromise(1);
-randomDelayPromise(2);
-randomDelayPromise(3);
+randomDelayPromise(1).then(console.log);
+randomDelayPromise(2).then(console.log);
+randomDelayPromise(3).then(console.log);
 
 // Reihenfolge?
